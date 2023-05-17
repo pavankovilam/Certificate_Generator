@@ -18,7 +18,7 @@ function createPDF()
  
  const openDoc=DocumentApp.openById(newTempfile.getId()); //get id of new doc
  const body =openDoc.getBody();  //get body elements of the template  
-  body.replaceText('{ f u l l n a m e }',sheet.getRange(lastRow,2).getValue()); //this work like find and replace text
+  body.replaceText('{ f u l l n a m e }',sheet.getRange(lastRow,2).getValue()); //LAST ROW SELECT LAST ROW AND 2 INDICATES 2nd COLOUM
   body.replaceText("{y e a r}",sheet.getRange(lastRow,3).getValue());
   body.replaceText("{s e m e s t e r}",sheet.getRange(lastRow,4).getValue());
   body.replaceText("{{HTNO}}",sheet.getRange(lastRow,5).getValue());
