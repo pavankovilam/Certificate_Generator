@@ -1,4 +1,5 @@
 #AUTOMATIC CERTIFICATE GENERATOR
+
 Google script is similar to javascript with pre built google functions visit "https://www.google.com/script/start/" to know the official google script documentation 
 
 Firstly we are gonna begin with creating a google form as per our requirments . Then in response section link a google sheet 
